@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'checkstyle'
 }
 
 group 'com.goit'
@@ -31,3 +32,25 @@ jar {
 test {
     useJUnitPlatform()
 }
+
+apply plugin: 'java'
+
+javadoc {
+    source = sourceSets.main.allJava
+}
+
+//TODO: fixup
+//task delombok(dependsOn: compileJava) {
+//    ext.outputDir = file("$buildDir/delombok")
+//    outputs.dir(outputDir)
+//    sourceSets.main.java.srcDirs.each {
+//        inputs.dir(it)
+//        args(it, "-d", outputDir)
+//    }
+//}
+//
+//javadoc {
+//    dependsOn delombok
+//    source = delombok.outputDir
+//    failOnError = false
+//}

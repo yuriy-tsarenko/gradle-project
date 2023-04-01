@@ -8,14 +8,14 @@ Tasks runnable from root project 'gradle'
 Build tasks
 -----------
 
-assemble - Assembles the outputs of this project.
-build - Assembles and tests this project.
-buildDependents - Assembles and tests this project and all projects that depend on it.
-buildNeeded - Assembles and tests this project and all projects it depends on.
-classes - Assembles main classes.
-clean - Deletes the build directory.
-jar - Assembles a jar archive containing the main classes.
-testClasses - Assembles test classes.
+`gradle assemble` - Assembles the outputs of this project.
+`gradle build`  - Assembles and tests this project.
+`gradle buildDependents`  - Assembles and tests this project and all projects that depend on it.
+`gradle buildNeeded`  - Assembles and tests this project and all projects it depends on.
+`gradle classes`  - Assembles main classes.
+`gradle clean`  - Deletes the build directory.
+`gradle jar`  - Assembles a jar archive containing the main classes.
+`gradle testClasses` - Assembles test classes.
 
 Build Setup tasks
 -----------------
@@ -47,3 +47,9 @@ Verification tasks
 
 check - Runs all checks.
 test - Runs the test suite.
+
+---
+
+**For detailed info run**
+
+`gradle javadoc`
